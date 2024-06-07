@@ -1,0 +1,158 @@
+/* css re-reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Aditi */
+body {
+  background: #fff;
+  color: black;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+
+  height: 100vh;
+  min-width: 100%;
+
+}
+.leftContainer {
+  min-width: 30%;
+  background-image: url("./img/green.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer {
+  padding: 20px;
+  width: 100%;
+
+  /* background-color: #45a049; */
+}
+.form-contianer {
+  display: flex;
+  flex-flow: column nowrap;
+  /* background-color: aqua; */
+  padding: 10px;
+
+}
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+}
+.nowrap{
+  white-space: nowrap;
+}
+.heading2,.form-contianer{
+ margin:2rem;
+}
+
+.input-field {
+  /* label and input field in one column */
+  display: flex;
+  min-width: 45%;
+  flex-direction: column;
+  margin: 4px 0;
+  /* border: 1px solid red; */
+}
+.heading1 {
+  /* text-align: left; */
+  /* margin: 2rem 0; */
+  color: white;
+  /* center */
+
+}
+.input-field input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  outline: none;
+
+}
+
+
+input[type="checkbox"] {
+  margin: 15px 0;
+}
+
+.heading2 {
+  display: none;
+  color: black;
+}
+input[type="submit"],
+.custom-file-upload, input[type="reset"]{
+  min-width: 20%;
+  border: none;
+text-align: center;
+  /* opacity: 0.8; */
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+
+  margin-top: 1rem;
+  /* color: black;
+  
+  background-color: #fff;
+  border: 1px double gainsboro; */
+ 
+}
+input[type="submit"]
+{
+  color: #fff;
+  background-color: green;
+}
+
+input[type="submit"]:hover
+ {
+ 
+  opacity: 0.4;
+}
+input[type="reset"]{
+color: black;
+  
+  background-color: #fff;
+  border: 1px double grey;
+}
+input[type="reset"]:hover{
+  opacity: 0.8;
+}
+.butgrp {
+  /* background-color: aqua; */
+  display: flex;
+  gap: 1rem;
+  justify-content:end;
+  margin-right: 2rem;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.1rem;
+ 
+  }
+
+  .leftContainer {
+    display: none;
+  }
+  .rightContainer {
+    min-width: 100%;
+  }
+  .heading2 {
+    display: block;
+  }
+  .butgrp{
+    justify-content: start;
+  }
+  .input-field{
+    min-width: 95%;
+  }
+}
