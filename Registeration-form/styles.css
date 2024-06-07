@@ -42,11 +42,7 @@
     white-space: nowrap;
     
   }
-.mobileHeading{
-  color: black;
-  padding: 20px;
-  
-}
+
 .RightContainer {
 
   width: 100%;
@@ -213,16 +209,7 @@ input[type="reset"]:hover {
   .container {
     flex-direction: row;
   }
-  /* .leftContainer {
-    display: flex;
-    width: 30%;
-    background-image: url(./img/green.jpg);
-    background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 20vh;
-  } */
+
   .leftContainer{
     width:30%;
   }
@@ -251,9 +238,7 @@ input[type="reset"]:hover {
     position: fixed;
     top: 18rem;
   }
-  .mobileHeading{
-    display: none;
-  }
+ 
   .butgrp{
     justify-content: end;
   }
