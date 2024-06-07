@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* for mobile */
+/* this to github -aditi final*/
+.container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: whitesmoke; */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.leftContainer{
+  background-image: url(./img/green.jpg);
+  width:100%;
+  background-size:cover ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:20vh;
+  padding: 20px;
+  /* text-align: center;
+  line-height: 500px; */
+  }
+  h1, h5{
+      
+       color: white;
+       padding: 2px 1px;
+    
+      
+  }
+  h1{
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    
+  }
+.mobileHeading{
+  color: black;
+  padding: 20px;
+  
+}
+.RightContainer {
+
+  width: 100%;
+  padding: 15px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  width: 100%;
+  font: inherit;
+
+}
+
+.input-field {
+  /* label and input field in one column */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 4px 0;
+  /* border: 1px solid red; */
+}
+
+.input-field input {
+  height: 40px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  outline: none;
+  margin: 10px 0;
+}
+.input-field label {
+  color: black;
+  margin: 5px 0;
+}
+
+.radio-field input {
+
+  padding: 10px;
+}
+.radio-field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 4px 0;
+}
+.hoobies-sec{
+  display: flex;
+ width: 100%;
+  flex-direction: column;
+  margin: 4px 0;
+  /* background-color: aqua; */
+
+}
+.checkbox-options, .radio_options{
+  display: flex;
+  /* width: 50%; */
+  flex-flow: row wrap;
+  gap:1rem;
+}
+/* .radio_options {
+  display: flex;
+  gap:1rem;
+  fle
+
+  /* border:1px solid red; */
+/* } */ 
+
+.radio-field span, .hoobies-sec span {
+  margin-bottom: 4%;
+  
+}
+/* file type */
+input[type="file"] {
+  display: none;
+}
+
+.input-field select {
+  height: 40px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  outline: none;
+  margin: 10px 0;
+}
+textarea {
+  height: 100px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  outline: none;
+  margin: 10px 0;
+  align-self: flex-start;
+}
+.bioDiv,
+.PicDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0;
+}
+.bioDiv {
+  padding: 20px;
+}
+.PicDiv {
+  margin-top: 1rem;
+}
+.terms {
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"],
+.custom-file-upload,
+input[type="reset"] {
+  min-width: 20%;
+  border: none;
+  text-align: center;
+  /* opacity: 0.8; */
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+
+  margin-top: 1rem;
+  /* color: black;
+  
+  background-color: #fff;
+  border: 1px double gainsboro; */
+}
+input[type="submit"],
+.custom-file-upload {
+  color: #fff;
+  background-color: green;
+}
+
+input[type="submit"]:hover,
+.custom-file-upload:hover {
+  opacity: 0.4;
+}
+input[type="reset"] {
+  color: black;
+
+  background-color: #fff;
+  border: 1px double grey;
+}
+input[type="reset"]:hover {
+  opacity: 0.8;
+}
+.butgrp {
+  /* background-color: aqua; */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  /* .leftContainer {
+    display: flex;
+    width: 30%;
+    background-image: url(./img/green.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+  } */
+  .leftContainer{
+    width:30%;
+  }
+  .rightContainer {
+    width: 70%;
+    /* flex-flow: row wrap; */
+  }
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .input-field {
+    width: 50%;
+    /* background-color: aquamarine; */
+    /* border:1px solid red; */
+  }
+ 
+  .radio-field {
+    width: 50%;
+  }
+  h1 {
+    position: fixed;
+    top: 15rem;
+  }
+  h5 {
+    position: fixed;
+    top: 18rem;
+  }
+  .mobileHeading{
+    display: none;
+  }
+  .butgrp{
+    justify-content: end;
+  }
+  .hoobies-sec{width: 50%;}
+}
