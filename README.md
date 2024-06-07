@@ -2,8 +2,6 @@
 <img src="https://github.com/aditiGithub023/TrainingSession2/blob/main/Rdesktop.png" alt="register Desktop">
 <h3>Mobile view</h3>
 <img src="https://github.com/aditiGithub023/TrainingSession2/blob/main/Rmobile.png" alt="register mobile>
-
-
 <h1>Login Page</h1>
 <h3>Mobile view</h3>
 <img src="https://github.com/aditiGithub023/TrainingSession2/blob/main/login-mobile.png"
